@@ -8,7 +8,7 @@ resource "azurerm_storage_account" "Terra-Storage-Backend" {
   resource_group_name       = azurerm_resource_group.Terra_tfbackend_rg.name
   location                  = azurerm_resource_group.Terra_tfbackend_rg.location
   account_tier              = "Standard"
-  account_replication_type  = "GRS"
+  account_replication_type  = "LRS"
   account_kind              = "StorageV2"
   enable_https_traffic_only = true
 
